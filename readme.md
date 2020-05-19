@@ -1,12 +1,4 @@
-/*
-* Crud API
-* API that stores store, update, retrieve and delete data from the database.
-*
-* Author: Oshaba Samson
-*
-*/
-
-Procedure on how to run the program
+How to run the program
 1. install composer from https://getcomposer.org/
 2. Create a database(ice_and_fire) on xampp
 2. Open terminal navigate to the root folder of the project
