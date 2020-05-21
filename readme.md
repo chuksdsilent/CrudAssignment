@@ -1,6 +1,7 @@
 <h4>About the Project<h4>
 This project was built with laravel 6 and php 7
 
+<p>
 How to run the program
 1. Clone the repo
 2.  install composer from https://getcomposer.org/
@@ -11,3 +12,4 @@ How to run the program
 7. Run php artisan migrate
 8. Run php artisan db:seed.
 9. Test api with postman or other http client application
+</p>
