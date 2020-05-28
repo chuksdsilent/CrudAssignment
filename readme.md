@@ -7,7 +7,7 @@ How to run the program
 1. Clone the repo
 2.  install composer from https://getcomposer.org/
 3. Create a database(ice_and_fire) on xxampp
-4. Open terminal(command prompt or linux terminal) and navigate to the folder of the project(crude assignment)
+4. Open terminal(command prompt or linux terminal) and navigate to the folder of the project(crud assignment)
 
 Run the following command
 
