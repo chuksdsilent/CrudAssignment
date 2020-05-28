@@ -3,18 +3,20 @@ About the Project
 
 This api (Crud Assignment) project was built with laravel 6 and php 7
 
-
 How to run the program
 1. Clone the repo
 2.  install composer from https://getcomposer.org/
 3. Create a database(ice_and_fire) on xxampp
-4. Open terminal(cmd or linux terminal) and navigate to the root folder of the project
+4. Open terminal(command prompt or linux terminal) and navigate to the folder of the project(crude assignment)
 
 Run the following command
 
-1. Run Composer install
-2. Run php artisan serve
-3. Run php artisan key:generate
-4. Run php artisan migrate.
-4. Run php artisan db:seed.
-5. Test api with postman or other http client application
+1. Composer install
+2. php artisan serve
+
+Open another terminal and navigate to the folder of the project then run the following command
+
+1. php artisan key:generate
+2. php artisan migrate.
+3. php artisan db:seed.
+4. Test api with postman or other http client application
