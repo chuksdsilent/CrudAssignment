@@ -12,7 +12,7 @@ How to run the program
 Run the following command
 
 1. Composer install
-2. php artisan serve
+2. php artisan serve --port=8080
 
 Open another terminal and navigate to the project folder then run the following command
 
