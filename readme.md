@@ -1,7 +1,7 @@
 
 About the Project
 
-This api (Crud Assignment) project was built with laravel 6 and php 7
+This api (Crud Assignment) project was built with laravel 6 and php 7.4.2
 
 How to run the program
 1. Clone the repo
