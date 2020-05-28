@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use \App\Model\Books;
-use \App\Http\Resources\BooksCollection;
+use Illuminate\Http\Request;
 use App\Http\Resources\BookResource;
+use \App\Http\Resources\BooksCollection;
+use App\Http\Resources\CreateAndUpdateBookResource;
 
 
 class BooksController extends Controller
@@ -42,7 +43,7 @@ class BooksController extends Controller
         array(
             'status_code' => 201,
             'status' => $this->status, 
-            'data' => new BookResource($books)
+            'data' => new CreateAndUpdateBookResource($books)
         )
     );
     }
@@ -60,7 +61,7 @@ class BooksController extends Controller
             array(
                 'status_code' => $this->status_code,
                 'status' => $this->status, 
-                'data' =>  new BookResource($data)
+                'data' =>  new CreateAndUpdateBookResource($data)
             )
         );
     }
@@ -87,7 +88,7 @@ class BooksController extends Controller
                 'status_code' => $this->status_code,
                 'status' => $this->status, 
                 'message' => $message,
-                'data' => new BookResource($data)
+                'data' => new CreateAndUpdateBookResource($data)
             )
         );
       
