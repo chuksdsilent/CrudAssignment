@@ -36,6 +36,7 @@ class BooksController extends Controller
      */
     public function store(Request $request)
     {   
+        
         $request['authors'] = [$request->authors];
        $books = new Books($request->all());
        $books->save();
@@ -124,6 +125,34 @@ class BooksController extends Controller
      */
     public function getBookByName()
     {
+        $response = file_get_contents('https://www.anapioficeandfire.com/api/books');
+       
+       
+// decode json to associative array
+$json_arr = json_decode($response, true);
+
+// get array index to delete
+$arr_index = array();
+foreach ($json_arr as $key => $value)
+{
+    if ($value['characters'] == array())
+    {
+        $arr_index[] = $key;
+    }
+}
+
+// delete data
+foreach ($arr_index as $i)
+{
+    unset($json_arr[$i]);
+}
+
+// rebase array
+$json_arr = array_values($json_arr);
+return $json_arr;
+       
+
+        // return $response;
         $name = $_GET['name'];  
         $data = Books::where('name', $name)->get(['id', 'name', 'isbn', 'authors', 'number_of_pages', 'publisher', 'country', 'release_date']);
        return  $this->displayApiResponse($data);
