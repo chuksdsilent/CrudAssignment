@@ -23,5 +23,4 @@ Open another terminal and cd into the project folder(CrudAssignment) then run th
 
 1. php artisan key:generate
 2. php artisan migrate.
-3. php artisan db:seed.
-4. Test api with postman or other http client application
+3. Test api with postman or other http client application
